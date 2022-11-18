@@ -6,8 +6,8 @@ from PIL import Image
 model1 = pickle.load(open('model/classifier_logreg','rb'))
 # model2 = pickle.load(open('model/classifier_svm','rb'))
 
-img = Image.open('favicon.ico')
-im = Image.open('favicon-sunny.ico')
+img = Image.open('img/favicon.ico')
+im = Image.open('img/favicon-sunny.ico')
 st.set_page_config(page_title="Rainfall Prediction App",page_icon=img,layout="centered",initial_sidebar_state="expanded")
 
 html_temp = """ 
